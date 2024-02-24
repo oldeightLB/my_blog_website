@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章 | 欢迎来到新博客！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# 欢迎来到新博客！
+<font color='#bcbcbc' size="0.8">2023/2/24 更新 </font>
+
+这里是ShaDiaowd's Blog的新站点，我们将为你带来更舒适、更安全、更流畅、兼容性更好、体验更好的PC端阅读体验。当然，手机端的体验我们也会持续更进。
+</br></br>
+我将会将旧文章同步到此处，由于使用新的Markdown语法，而不是飞书云文档，将要进行重新排版，所以同步旧文章可能需要一些时间，并且由于学业繁重，更新可能较慢。
+</br></br>
+我们将为您带来更好的阅读体验，然后这篇文章就写不下去了。  
+See you next time.
+</br>
+<font color='red' size="0.8">注：手机端预计在2024年劳动节前后更新。</font>
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>

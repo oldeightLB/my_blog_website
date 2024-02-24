@@ -1,0 +1,16 @@
+        body {
+            background-color: rgb(233, 245, 255);
+        }
+        
+        a {
+            text-decoration: none;
+            color: black
+        }
+        
+        .doc {
+            background-color: white;
+            margin: 30px 300px 30px;
+            padding: 10px 30px 10px;
+            border: 1px solid rgb(240, 240, 240);
+            border-radius: 10px;
+        }
