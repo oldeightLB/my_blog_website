@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章 | 欢迎来到新博客！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# English 整活
+<font color='#bcbcbc' size="0.8">2023/11/4 更新 </font>
+
+事情是这样的……我从英语书上默写文章到英语作文上，然后结果不用说都知道了
+
+所以就“写”了这篇文章
+
+好像有单词拼错了
+
+---
+
+## Anna's Blog
+
+Hello everyone.Welecome to my blog.
+
+##### About Me
+
+My name is Anna. I'm from Germany. I'm 11 years old. I'm tall and thin. I have long hair.
+
+I live with my family in a house close to some mountains. My mum is an Art teacher.My dad is a doctor. I have an elder sister and an elder brother.
+
+##### About My School And My hobbies
+
+Every day, I go to school by school bus. My favorite subjects are Math, Art and Science. I like my school because the teachers are all very friendly. My dream is to be an engineer.
+
+I like many sports. I'm good at swimming and playing basketball. These are my favorite hobbies.
+
+I want to make friends with young people from all over the world! Email me, please!
+
+---
+
+文章出处：义务教育教科书 英语 上海教育出版社 七年级上册
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
