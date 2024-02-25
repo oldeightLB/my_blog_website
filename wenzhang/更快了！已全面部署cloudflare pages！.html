@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章 | 欢迎来到新博客！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# 更快了！已全面部署 cloudflare pages！
+<font color='#bcbcbc' size="0.8">2024/1/5 更新 </font>
+
+
+以前，我的网站使用的是 github pages，
+
+这个在国内是真的网速极快，高达 10kb/s，
+
+我自己都忍受不了！！！
+
+于是，我就：
+
+<img src="static/J5IvblYewogZzvxNMkscAc5anbb.png" width="740" height="420"></img>
+
+没错，cloudflare pages！
+
+<img src="static/JFJ1b95GFo6adsx5Z5rc0VF4nYd.png" width="740" height="420"></img>
+
+速度更快！（但是还是有点慢）
+
+妈妈再也不用担心图片打不开了！！
+
+从此，全面替换原页面，但是原页面仍然可以正常访问，并且持续更新和部署。
+
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
