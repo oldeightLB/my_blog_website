@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章 | 欢迎来到新博客！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# MCBE 翻译出错 第三方汉化包解决方法
+<font color='#bcbcbc' size="0.8">2023/12/8 更新 </font>
+
+近日发现，Minecraft: Bedrock Edition部分中文出现翻译问题，如：</br></br>
+<img src="游戏截图1111.jpg" width="740" height="450"></img></br>
+而一些大佬提出了解决方案，以下为模组链接：[网站已停运，打开后自动跳转本机IP](http://127.0.0.1)
+
+Microsoft 的翻译真的会笑死人，玩家的翻译都比官方准确……无语
+
+从 win7 用到现在的 Windows，Microsoft 最近的翻译越来越猖狂了。
+
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
