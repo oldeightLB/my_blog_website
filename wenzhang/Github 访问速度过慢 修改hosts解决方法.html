@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# Github 访问速度过慢 修改hosts解决方法
+<font color='#bcbcbc' size="0.8">2023年11月11日 更新 </font>
+
+### 前言
+
+众所周知，访问 GitHub 的速度是极慢的，只有 10KB/s，
+
+这是因为 DNS 的问题，没有搜到最近的 CDN 节点。
+
+**停！不要急着去改DNS！**
+
+修改 DNS 或许对你没有太大帮助，因为似乎阿里 DNS 也不能解决丢包问题。
+
+**还有，此方法不能加速下载，只能加速访问，如果下载的话还需要用「特殊方法」或者****Github****文件加速！**
+
+### 效果展示
+
+（从旧站迁移至新站时，懒得添加图片）
+
+延迟相对较低，也没有丢包。
+
+### 实现原理
+
+hosts 文件可以让一个域名 指向另一个 ip 地址。
+
+例如，我们要将"某个域名.cn"这个域名 指向 192.168.255.1，我们可以这样操作：
+
+```
+192.168.255.1 某个域名.cn
+```
+
+然后我们再去访问“某个域名.cn”，我们访问的就不是原有页面，而是 ip 为 192.168.255.1 的网站了。
+
+这个操作需要系统管理员权限，并且只对修改的计算机生效。如果你未获取管理员权限，请与你的系统管理员联系（微软式废话）
+
+### 操作
+
+如何修改 hosts 文件？
+
+打开以下路径：
+
+```
+C:\windows\system32\drivers\etc
+```
+
+找到 hosts 文件**并使用****管理员****身份打开（如果没有此选项，直接用 VSCode 打开，IDE 内支持无法保存手动取得管理员权限）**
+
+在 hosts 文件中填入代码：（或者你也可以用[开源项目](https://github.com/521xueweihan/GitHub520)介绍文件里面提供的代码）
+
+```python
+140.82.112.3 github.com
+140.82.112.4 github.com
+199.232.5.194 github.global.ssl.fastly.net
+```
+
+![](static/SuxubOInloDM0Ox0gDOcVeM6nGg.png)
+
+然后访问 GitHub，速度和稳定性都有提升。
+
+### 尾声
+
+或许这样子修改后，访问 GitHub 的速度有了较大提升。
+
+又或许你只是不丢包了，速度没啥提升。
+
+又或许你访问速度都没有提升。
+
+这或许是运营商的问题。
+
+但这个方法真实有效。
+
+速度变快后，借（bai）鉴（piao）代码更加轻松了，工作效率翻了一倍（bushi）
+
+本来是想用 iframe 链接的，但是网站拒绝访问了，以下是链接：
+
+[GitHub 文件加速 - Moeyy](https://moeyy.cn/gh-proxy/)
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
