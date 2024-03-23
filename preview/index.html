@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名用户的小站 | 预览版</title>
+    <style>
+        @font-face {
+            font-family: 'WangZhanZiTi';
+            /* 自定义字体名称 */
+            src: url('../SourceHanSerifCN-Medium-6.otf');
+            /* 字体文件的相对路径 */
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .left-column {
+            flex: 7;
+            /* 70% width */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        .right-column {
+            flex: 3;
+            /* 30% width */
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* 设置背景颜色 */
+            color: #000000;
+            /* 设置文本颜色 */
+            padding: 10px;
+            /* 设置内边距，增加可读性 */
+            z-index: 100;
+            /* 控制悬停元素的层级 */
+            border-bottom: 0.8px solid rgb(213, 213, 213);
+            /* 添加下边框样式 */
+            border-top: none;
+            /* 移除上边框 */
+            backdrop-filter: blur(10px);
+        }
+        
+        * {
+            font-family: WangZhanZiTi;
+        }
+        
+        .rounded-button {
+            display: inline-block;
+            padding: 10px 20px;
+            /* 调整边距 */
+            background-color: #0074D9;
+            color: #FFFFFF;
+            font-size: 16px;
+            border-radius: 9990px;
+            /* 设置圆角半径 */
+            border: none;
+            cursor: pointer;
+        }
+        
+        .wztitle {
+            color: #0074D9
+        }
+        /* 去除下划线 */
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a {
+            color: hsl(0, 0%, 0%);
+        }
+        
+        .wenzhang-cont {
+            border-radius: 10px;
+            background-color: rgb(218, 218, 218);
+            padding: 7px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <h3 class="logo">&nbsp;&nbsp;&nbsp;匿名用户的小站 | 预览版</h3>
+    </div>
+    <div class="container">
+        <div class="left-column" style="padding-top: 90px;padding-left: 30px;padding-right: 30px;">
+            <!-- Content for the left column -->
+            <h1>欢迎来到「匿名用户」的小站！</h1>
+            <p>有点懒，就不怎么写简介了吧</br>呃，这里其实只是一个博客</p>
+
+            <h2>文章</h2>
+            <a href="">
+                <div class="wenzhang-cont">
+                    <h3 class="wztitle">示例标题</h3>
+                    <p>生活就像海洋，只有意志坚强的人才能到达彼岸。生活就像海洋，只有意志坚强的人才能到达彼岸。生活就像海洋，只有意志坚强的人才能到达彼岸。</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="right-column" style="padding-top: 90px;padding-left: 30px;padding-right: 30px;">
+            <!-- Content for the right column -->
+            <h2><strong style="font-weight: 10000;">匿名用户</strong></h2>
+            <p>这个人很神秘，什么也没有留下......</p>
+            <button class="rounded-button">＋ 都匿名了，还想关注？</button>
+            <h3>个人简介</h3>
+            <p>xxxx年，入学xxx学校；</br>xxxx年，从xxxx学校毕业；</br>xxxx年，被xxx初中录取，进入x年级x班……（写不下去了）</br>所以，写了跟没写有什么区别吗？</p>
+            <h3>我的项目</h3>
+            <p>毕竟是匿名用户，也不能说太多啊……</p>
+            <h3>我的作品</h3>
+            <p>毕竟是匿名用户，也不能说太多啊……</p>
+            <h3>我的成就</h3>
+            <p>曾获得过（）（）（）（）。</p>
+            <h3>我的班级与学校</h3>
+            <p>平平无奇。</p>
+        </div>
+    </div>
+</body>
+
+</html>

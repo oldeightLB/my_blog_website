@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# 2024年3月23日网站更新公告
+<font color='#bcbcbc' size="0.8">2024/3/23 更新 </font>
+
+本站于2024年3月23日完成了界面的优化更新和漏洞的修复。  
+### 更新内容
+此次更新更改了背景颜色，更改了字体（免费商用），修复了一些已知问题。 
+### 关于新UI  
+新UI已经设计完成，但是难以实装，所以就不实装了（）  
+但是你可以通过网站顶部的「预览新UI」进行预览。  
+新的页面将会更加现代化。  
+由于时间和屎山代码，即使使用Python也难以将所有页面转为新UI，所以就没有实装到网站。（语文不好，有没有哪位语文科代表过来修改一下病句）
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
