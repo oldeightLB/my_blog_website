@@ -18,7 +18,7 @@
         @font-face {
             font-family: 'WangZhanZiTi';
             /* 自定义字体名称 */
-            src: url('../SourceHanSerifCN-Medium-6.otf');
+            src: url('https://webfont.cdn.zfont.cn/font_cn_web/SourceHanSerif.zfont.cn');
             /* 字体文件的相对路径 */
         }
         
