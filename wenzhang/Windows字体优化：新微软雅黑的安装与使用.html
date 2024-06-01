@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# Windows字体优化：新微软雅黑的安装与使用
+<font color='#bcbcbc' size="0.8">2024/6/1 更新 </font>
+
+我不会是最后一个发现的吧……  
+在刷小破站的时候，了解到了“新微软雅黑”这款字体。  
+这款字体可以优化Windows的字体显示效果，让字体更加平滑。  
+该操作可能不可逆，请谨慎操作；若需要倒回，可自行baidu or google修改注册表的字体修改方法。  
+**在Windows修改字体有风险，请谨慎操作！！！**
+## 字体的下载
+通过GitHub或其他方式下载字体。解压下来是这样的：
+<img src="https://picui.cn/i/2024/06/01/665a96949fa43.png" width="100%" height="100%">
+全选，右键，安装，重启。  
+然后你就会看到大部分字体变平滑了，不会那么刺眼了；但是还有部分字体没有应用，需要使用Mactype进行优化。（我这里没有应用完全需要使用，但是如果你的系统应用完全了，使用Mactype反而会有副作用。  
+部分软件的效果展示：
+<div align=center>
+<img src="https://picui.cn/i/2024/06/01/665a9766dbf42.png" width="100%" height="100%">
+<img src="https://picui.cn/i/2024/06/01/665a9a445326a.png" width="100%" height="100%">
+<img src='static/屏幕截图 2024-06-01 114821.png' width="100%" height="100%">
+<img src="https://picui.cn/i/2024/06/01/665a97b3dc393.png" width="50%" height="50%">  
+
+效果还不错，还是非常推荐使用这个方法的。
+</div>
+
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>

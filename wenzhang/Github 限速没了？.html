@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# Github 限速没了？
+<font color='#bcbcbc' size="0.8">2024/6/1 更新 </font>
+
+今天上去GitHub下个开源软件，发现异常快，并且下载文件的速度还达到了5-10MB/s左右（带宽100兆）  
+省份是广东，运营商是电信，有没有速度跟我一样的？（我确保我没有忘关***，软路由就没用过，手机和电脑都试了）  
+就离谱，限速突然就没了  
+附件：
+<img src='https://picui.cn/i/2024/06/01/665a9c9e655b2.png' width="100%" height="100%">
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
