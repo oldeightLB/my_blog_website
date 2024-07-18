@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href='../fonts/SOURCEHANSERIFCN-MEDIUM-6/result.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# （补档）2024年7月17日更新公告
+<font color='#bcbcbc' size="0.8">2024/7/17 更新 </font>
+
+本次更新启用了新的域名[blog.shadiaowd.us.kg](https://blog.shadiaowd.us.kg)，若成本过高或者忘记续费，网站将会重新启用CloudFlare提供的免费子域名。  
+
+同时，当前网站评论区所采用的第三方接口存在若干功能缺陷，这导致了部分评论的意外丢失。为了方便用户回顾与参考，所有历史评论现可通过访问使用旧域名[blog-shadiaowd.pages.dev](https://blog-shadiaowd.pages.dev)的网站进行查看。  
+
+我对此次变动给您带来的不便深表歉意，并正积极努力优化服务，以期在未来为大家提供更加稳定、完善的体验。感谢您的理解与支持！
+<div style="text-align:right">
+ShaDiaowd</br>
+2024年7月17日
+</div>
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
