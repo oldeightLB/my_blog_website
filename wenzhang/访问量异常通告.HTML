@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href='../fonts/SOURCEHANSERIFCN-MEDIUM-6/result.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# 访问量异常通告
+<font color='#bcbcbc' size="0.8">2024/7/19 更新 </font>
+
+本站访问量异常，疑似遭到恶意网络攻击，cloudflare没有拦下来（？）  
+先看截图：
+<img src="https://img.picui.cn/free/2024/07/19/6699d13d04a14.png" style='width:100%;height:100%'/>
+美国的访问量比中国大陆还高？！  
+It is impossible!  
+除了我的朋友外，我并没有对我的网站进行**任何宣传**（在github个人主页上提到过，但是我的github个人主页也不可能有那么多访问量吧），并且在 3 天前，我使用的是cloudflare提供的pages子域名，**被搜索引擎收录的概率很小**！！  
+由于网站使用cloudflare的free计划，目前暂时使用高级防护功能，并且无法对指定IP进行屏蔽  
+若发现异常情况，请→[及时报告](https://github.com/oldeightLB/my_blog_website/issues)←（这是个按钮，这真的是个按钮）。
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
