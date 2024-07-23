@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href='../fonts/SOURCEHANSERIFCN-MEDIUM-6/result.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# 速度再次提升！网站已全面部署Vercel！
+<font color='#bcbcbc' size="0.8">2024/7/23 更新 </font>
+
+由于Cloudflare Pages的速度较慢，本站及我的其他个人网站已将网站部署到了Vercel，网站速度得到了提升，延迟得到降低。使用Vercel后，网站的字体加载速度得到显著提升，经过实际测试，在100Mbps宽带环境下*，经过实际测试，网站的首屏加载时间通常不超过1秒。由于Vercel的DNS服务近期遭受了DNS污染，我们已决定暂时使用自己的域名作为替代方案；然而，若未来出现域名忘记续费或域名成本过高的情况，本站将考虑重新使用Cloudflare Pages服务及其提供的子域名，以确保网站的稳定访问。  
+本次更新将显著提升网站性能，总之，利大于弊。
+<div style='text-align:right'>
+ShaDiaowd</br>
+2024年7月23日
+</div>
+<p style='font-size:13px;color:grey'>*网站加载速度因地区、运营商、宽带而异。</p>
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
