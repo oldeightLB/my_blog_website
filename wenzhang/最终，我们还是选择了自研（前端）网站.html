@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ShaDiaowd's Blog | 博客文章</title>
+    <link rel="stylesheet" href='../fonts/SOURCEHANSERIFCN-MEDIUM-6/result.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <a href="../index.html">
+            <p style="font-size: 13px;color: #bcbcbc;">← 返回首页</p>
+        </a>
+        <div id="$m" class="markdown-body"></div>
+        <textarea id="$t" style="display:none">
+# 我们还是选择了自研（前端）网站
+<font color='#bcbcbc' size="0.8">2024/7/27 更新 </font>
+
+事情是这样的，起初，我们“创立”（但是没有完全创立）了 Phaethon Game Club ***（禁止直译，禁止直译，禁止直译！）***，然后我作为创立者之一，也是队里的前端工程师（？），想去找个模板搞网站，结果模板一点都不简单易用。  
+然后我想到了WordPress和sxl.cn，但是成本过高，理由如下：  
+
+---
+WordPress 开源，但是我们没有服务器或者虚拟主机；而其提供的托管服务免费版功能限制较多，并且不能绑定自定义域名，在国内的访问速度也较慢；sxl.cn 闭源，也是付费的服务；同样的，它的免费版不支持绑定自定义域名。
+
+---
+
+最终，我们选择了使用Vercel部署和托管我们的网站；并进行自研（前端）网站。在Vercel中不需要考虑后端的事情，也免去了我学习一些 Python 库的时间和人力成本。
+
+另外，插句题外话，我们的 Phaethon Game Club 是一个《蛋仔派对》的游戏俱乐部，最近也正在游玩《第五人格》*。目前暂不开放申请加入的入口。
+<div style='text-align:right'>
+2024年7月23日</br>Bilibili @沙雕wd；小红书 @1
+</div>
+<p style='font-size:13px;color:grey'>*目前我们成员2人，一个号丢了，老登转世；一个基本没有基础，是萌新（）</p>
+            </textarea>
+        <script>
+            $m.innerHTML = marked.parse($t.value);
+        </script>
+        <div class='comments'>
+            <h4 style="text-align: center;">评论区</h4>
+            <script src="https://giscus.app/client.js" data-repo="oldeightlb/sdwdtalk" data-repo-id="R_kgDOK8uAUg" data-category-id="DIC_kwDOK8uAUs4Cb8Bh" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+        </div>
+    </div>
+</body>
